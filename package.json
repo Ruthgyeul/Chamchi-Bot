@@ -1,0 +1,24 @@
+{
+  "name": "chamchibank",
+  "version": "1.0.0",
+  "description": "Chachi Server Bank Discord Bot",
+  "main": "main.js",
+  "scripts": {
+    "start": "pm2 start shard.js --name ChamchiBankBot --restart-delay=5000",
+    "restart": "pm2 restart ChamchiBankBot",
+    "cleanF": "rimraf ./**/*.DS_Store"
+  },
+  "keywords": [
+    "discord",
+    "discord-bot"
+  ],
+  "author": "Ruthgyeul",
+  "dependencies": {
+    "axios": "^1.7.3",
+    "discord.js": "^14.15.3",
+    "fs": "^0.0.1-security",
+    "mongodb": "^6.8.0",
+    "pidusage": "^3.0.2",
+    "rimraf": "^5.0.5"
+  }
+}
